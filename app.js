@@ -67,7 +67,7 @@ passport.deserializeUser(function(id, done) {
 passport.use(new GoogleStrategy({
     clientID: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET,
-    callbackURL: "http://localhost:3000/auth/google/secrets",
+    callbackURL: "https://infinite-garden-89662.herokuapp.com/auth/google/secrets",
     useProfileURL: "https://www.googleapis.com/oauth2/v3/userinfo"
   },
   //acess token is given to our webapp by google servers to get any additional info on users in future
